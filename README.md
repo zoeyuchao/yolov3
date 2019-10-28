@@ -81,9 +81,12 @@ python detect.py --data data/ball.data --cfg cfg/yolov3.cfg --weights weights/be
 ball.pt下载链接：https://pan.baidu.com/s/1YBy26Mx4IOmGjHOIClOxRA  提取码：qth5 
 fire.pt下载链接：链接：https://pan.baidu.com/s/1vnxqklnuik1iXrjurP3ZoQ 提取码：0kod 
 
-可视化
+## 4.可视化
+
+在训练阶段会在yolov3目录下生成一个result.txt文件，可以运行这句话：
 
 ```
 python -c "from utils import utils; utils.plot_results()"
 ```
 
+会在yolov3目录下生成一张result.png
