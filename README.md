@@ -70,7 +70,25 @@ python train.py --data data/ball.data --cfg cfg/yolov3.cfg --epochs 100 --batch-
     - 运行根目录下makeTxt.py，得到ImageSets存放的train与test文件；
     - 运行根目录下voc_label.py，得到labels的具体内容以及data目录下的train.txt，test.txt，val.txt，这里的train.txt与之前的区别在于不仅仅得到文件名还有文件的具体路径。
 
-## 3.测试
+## 3.评估
+
+```
+python test.py  --data data/ball.data --cfg cfg/yolov3.cfg  --weights weights/best.pt
+```
+
+在 yolov3的目录下会生成一张test_batch0.jpg。
+
+## 4.可视化
+
+在训练阶段会在yolov3目录下生成一个result.txt文件，可以运行这句话：
+
+```
+python -c "from utils import utils; utils.plot_results()"
+```
+
+会在yolov3目录下生成一张result.png。
+
+## 5.测试
 
 在data路径下建一个samples的文件夹，将测试图片放入samples文件夹中，然后执行：
 
@@ -81,12 +99,3 @@ python detect.py --data data/ball.data --cfg cfg/yolov3.cfg --weights weights/be
 ball.pt下载链接：https://pan.baidu.com/s/1YBy26Mx4IOmGjHOIClOxRA  提取码：qth5 
 fire.pt下载链接：链接：https://pan.baidu.com/s/1vnxqklnuik1iXrjurP3ZoQ 提取码：0kod 
 
-## 4.可视化
-
-在训练阶段会在yolov3目录下生成一个result.txt文件，可以运行这句话：
-
-```
-python -c "from utils import utils; utils.plot_results()"
-```
-
-会在yolov3目录下生成一张result.png
