@@ -29,6 +29,8 @@ bash ./download_yolov3_weights.sh
 python train.py --data data/ball.data --cfg cfg/yolov3.cfg --epochs 100 --batch-size 8
 ```
 
+在yolov3路径下会生成train_batch0.jpg文件。
+
 - 如果出现out of memory，修改batch-size的大小。
 
 - 如果出现cv2找不到的情况，在python文件里加上
@@ -81,6 +83,8 @@ python train.py --data data/ball.data --cfg cfg/yolov3.cfg --epochs 100 --batch-
 ```
 python test.py  --data data/ball.data --cfg cfg/yolov3.cfg  --weights weights/best.pt
 ```
+
+在yolov3的目录下会生成test_batch0.jpg文件。
 
 ## 4.可视化
 
