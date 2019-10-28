@@ -65,12 +65,14 @@ python train.py --data data/ball.data --cfg cfg/yolov3.cfg --epochs 100 --batch-
   
     - 将数据集Annotations、JPEGImages拷贝至data文件夹下；
   
-    - 新建两个文件夹，分别命名为ImageSets和labels，将JPEGImages文件夹复制粘贴，并将文件夹重命名为images；
+    - 新建3个文件夹，分别命名为ImageSets、labels、images，将JPEGImages中的图片全部复制到images文件夹中；
   
     - 运行根目录下makeTxt.py，得到ImageSets存放的train与test文件；
     - 运行根目录下voc_label.py，得到labels的具体内容以及data目录下的train.txt，test.txt，val.txt，这里的train.txt与之前的区别在于不仅仅得到文件名还有文件的具体路径。
 
 ## 3.测试
+
+在data路径下建一个samples的文件夹，将测试图片放入samples文件夹中，然后执行：
 
 ```
 python detect.py --data data/ball.data --cfg cfg/yolov3.cfg --weights weights/best.pt  
