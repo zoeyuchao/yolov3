@@ -39,7 +39,7 @@ python train.py --data data/ball.data --cfg cfg/yolov3.cfg --epochs 100 --batch-
 
 - 假如你要训练自己的模型，需要修改以下内容：
 
-  - 网络结构：**yolo**层的class种类和yolo层**之前**的filter大小，class=x，每一个网格预测3个anchor结果，所以filter =(3 *(x + 5)),注意三层yolo都要修改。
+  - 网络结构：**yolo**层的class种类和yolo层**之前**的filter大小，class=x，每一个网格预测3个anchor结果，所以filter =(3 *(x + 5)),注意三层yolo都要修改。【给的示例是ball数据集，所以是x=4，如果是fire数据集，就要变成x=5】
   
   - 在data目录下新建ball.data，配置训练的数据，内容如下:
   
@@ -61,6 +61,12 @@ python train.py --data data/ball.data --cfg cfg/yolov3.cfg --epochs 100 --batch-
     balloon
     ```
   
+  - voc_label.py文件中也要相应地修改：
+  
+    ```
+  classes = ["basketball","football","volleyball","balloon"]
+    ```
+    
   - 准备数据集：
   
     - 将数据集Annotations、JPEGImages拷贝至data文件夹下；
