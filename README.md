@@ -82,8 +82,6 @@ python train.py --data data/ball.data --cfg cfg/yolov3.cfg --epochs 100 --batch-
 python test.py  --data data/ball.data --cfg cfg/yolov3.cfg  --weights weights/best.pt
 ```
 
-在 yolov3的目录下会生成一张test_batch0.jpg。
-
 ## 4.可视化
 
 在训练阶段会在yolov3目录下生成一个result.txt文件，可以运行这句话：
