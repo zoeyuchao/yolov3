@@ -62,9 +62,9 @@ python train.py --data data/ball.data --cfg cfg/yolov3.cfg --epochs 100 --batch-
     ```
   
   - voc_label.py文件中也要相应地修改：
-  
+    
     ```
-  classes = ["basketball","football","volleyball","balloon"]
+    classes = ["basketball","football","volleyball","balloon"]
     ```
     
   - 准备数据集：
