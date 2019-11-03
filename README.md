@@ -104,7 +104,15 @@ python -c "from utils import utils; utils.plot_results()"
 python detect.py --data data/ball.data --cfg cfg/yolov3.cfg --weights weights/best.pt  
 ```
 
-ball.pt下载链接：https://pan.baidu.com/s/1YBy26Mx4IOmGjHOIClOxRA  提取码：qth5 
+## 6.提供的模型
 
-fire.pt下载链接：链接：https://pan.baidu.com/s/1vnxqklnuik1iXrjurP3ZoQ 提取码：0kod 
+清华网盘链接不一定长期有效，如果下载不成功就从备用的百度网盘链接下载。
+
+- ball.pt
+  - 百度网盘链接：https://pan.baidu.com/s/1YBy26Mx4IOmGjHOIClOxRA  提取码：qth5 
+  - 清华网盘链接： https://cloud.tsinghua.edu.cn/f/f6748453cced47608edb/?dl=1 
+
+- fire.pt
+  - 百度网盘链接：https://pan.baidu.com/s/1vnxqklnuik1iXrjurP3ZoQ  提取码：0kod 
+  - 清华网盘链接： https://cloud.tsinghua.edu.cn/f/74ecafcf9b574b069135/?dl=1 
 
